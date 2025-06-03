@@ -19,6 +19,14 @@
                 {
                     "definition": "প্রোজেক্টের সকল রাউট লিস্ট দেখার জন্য",
                     "code": "php artisan route:list"
+                },                
+                {
+                    "definition": "পাবলিক স্টোরেজ লিংক তৈরি করার জন্য",
+                    "code": "php artisan storage:link"
+                },
+                {
+                    "definition": "স্টোরেজ সিমলিংক মুছে ফেলার জন্য",
+                    "code": "php artisan storage:unlink"
                 },
                 {
                     "definition": "প্রোজেক্টের মেথড অনুযায়ী রাউট লিস্ট দেখার জন্য",
