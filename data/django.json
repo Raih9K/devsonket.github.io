@@ -162,7 +162,7 @@
             "items": [
                 {
                     "definition": "অ্যাপ তৈরী করা",
-                    "code": "django-admin startapp <app_name>"
+                    "code": "python manage.py startapp <app_name>"
                 },
                 {
                     "definition": "প্রোজেক্ট এর settings.py ফাইলে অ্যাাপ ইনস্টল করার জন্য",
