@@ -287,6 +287,40 @@
       "code": "class Car {\n  public string model = \"Toyota\";\n}\n\nCar myCar = new Car();\nConsole.WriteLine(myCar.model);"
     }
   ]
+},
+        {
+  "title": "LINQ Basics",
+  "items": [
+    {
+      "definition": "একটি ইন্টিজার লিস্ট থেকে সব ইভেন নাম্বার বের করা।",
+      "code": "List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6};\nvar evenNumbers = numbers.Where(n => n % 2 == 0);\n\nforeach (var num in evenNumbers) {\n  Console.WriteLine(num);\n}"
+    },
+    {
+      "definition": "একটি স্ট্রিং লিস্ট থেকে নির্দিষ্ট ক্যারেক্টার দিয়ে শুরু হওয়া নাম বের করা।",
+      "code": "List<string> names = new List<string> {\"Ratul\", \"Asif\", \"Raihan\"};\nvar rNames = names.Where(name => name.StartsWith(\"R\"));\n\nforeach (var name in rNames) {\n  Console.WriteLine(name);\n}"
+    },
+    {
+      "definition": "একটি লিস্ট থেকে শুধুমাত্র কিছু প্রপার্টি সিলেক্ট করা (Select)।",
+      "code": "var fruits = new List<string> {\"Apple\", \"Banana\", \"Mango\"};\nvar upperFruits = fruits.Select(f => f.ToUpper());\n\nforeach (var f in upperFruits) {\n  Console.WriteLine(f);\n}"
+    },
+    {
+      "definition": "Where এবং OrderBy ব্যবহার করে ফিল্টার ও সর্ট করা।",
+      "code": "List<int> scores = new List<int> {70, 40, 90, 60};\nvar result = scores.Where(s => s >= 60).OrderBy(s => s);\n\nforeach (var score in result) {\n  Console.WriteLine(score);\n}"
+    },
+    {
+      "definition": "Anonymous type ব্যবহার করে নতুন অবজেক্ট তৈরি করা (Select)।",
+      "code": "var students = new List<string> {\"Ratul\", \"Asif\"};\nvar data = students.Select(s => new { Name = s, Length = s.Length });\n\nforeach (var d in data) {\n  Console.WriteLine($\"{d.Name} - {d.Length} letters\");\n}"
+    },
+    {
+      "definition": "FirstOrDefault ব্যবহার করে একটি এলিমেন্ট পাওয়া না গেলে ডিফল্ট ভ্যালু রিটার্ন করা।",
+      "code": "List<string> list = new List<string> {\"One\", \"Two\"};\nvar result = list.FirstOrDefault(x => x == \"Three\");\nConsole.WriteLine(result ?? \"Not Found\");"
+    },
+    {
+      "definition": "Count ব্যবহার করে কতটি এলিমেন্ট শর্ত পূরণ করছে সেটা বের করা।",
+      "code": "List<int> ages = new List<int> {20, 25, 18, 30};\nint adults = ages.Count(age => age >= 18);\nConsole.WriteLine(adults);"
+    }
+  ]
 }
+
     ]
 }
