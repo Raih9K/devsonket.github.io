@@ -19,14 +19,6 @@
                 {
                     "definition": "প্রোজেক্টের সকল রাউট লিস্ট দেখার জন্য",
                     "code": "php artisan route:list"
-                },                
-                {
-                    "definition": "পাবলিক স্টোরেজ লিংক তৈরি করার জন্য",
-                    "code": "php artisan storage:link"
-                },
-                {
-                    "definition": "স্টোরেজ সিমলিংক মুছে ফেলার জন্য",
-                    "code": "php artisan storage:unlink"
                 },
                 {
                     "definition": "প্রোজেক্টের মেথড অনুযায়ী রাউট লিস্ট দেখার জন্য",
@@ -179,30 +171,6 @@
                 {
                     "definition": "নতুন পলিসি তৈরি করার জন্য",
                     "code": "php artisan make:policy <policy-name>"
-                },
-                {
-                    "definition": "নতুন স্টার্টার কিট ইনস্টল করতে (Laravel 12)",
-                    "code": "composer create-project laravel/laravel-react my-app"
-                },
-                {
-                    "definition": "নতুন Vue স্টার্টার কিট ইনস্টল করতে (Laravel 12)",
-                    "code": "composer create-project laravel/laravel-vue my-app"
-                },
-                {
-                    "definition": "নতুন Livewire স্টার্টার কিট ইনস্টল করতে (Laravel 12)",
-                    "code": "composer create-project laravel/laravel-livewire my-app"
-                },
-                {
-                    "definition": "WorkOS AuthKit বেসড স্টার্টার কিট ইনস্টল করতে (Laravel 12)",
-                    "code": "composer create-project laravel/laravel-react-workos my-app"
-                },
-                {
-                    "definition": "প্রোজেক্টের জন্য API ডকুমেন্টেশন জেনারেট করতে (Laravel 12)",
-                    "code": "php artisan scribe:generate"
-                },
-                {
-                    "definition": "PEST ইউনিট টেস্ট তৈরি করতে (Laravel 12)",
-                    "code": "php artisan make:test <test-name> --pest"
                 }
             ]
         },
@@ -1133,31 +1101,6 @@
                 {
                     "definition": "রিলেটেড আইটেমকে ট্যাগ অনুযায়ী ক্যাশেতে সংরক্ষণ করতে",
                     "code": "Cache::tags(['programmer', 'developer'])->put($key, $value, $seconds); /* অথবা cache()->add($key, $value, $seconds) */"
-                }
-            ]
-        },
-        {
-            "title": "লারাভেল ১২ নতুন ফিচার",
-            "items": [
-                {
-                    "definition": "নতুন স্টার্টার কিট (React, Vue, Livewire)",
-                    "code": "composer create-project laravel/laravel-react|laravel-vue|laravel-livewire my-app"
-                },
-                {
-                    "definition": "WorkOS AuthKit সাপোর্ট (সোশ্যাল অথেনটিকেশন, পাসকী, SSO)",
-                    "code": "composer create-project laravel/laravel-react-workos|laravel-vue-workos|laravel-livewire-workos my-app"
-                },
-                {
-                    "definition": "Laravel বাইট (দ্রুত সিংগেল-ফাইল কম্পোনেন্ট)",
-                    "code": "<?php\n\nuse function Laravel\\Folio\\{name};\n\nname('homepage');\n\n?>\n\n<x-layout>\n    <h1>Hello World</h1>\n</x-layout>"
-                },
-                {
-                    "definition": "Laravel Volt এর উন্নত ব্যবহার",
-                    "code": "<?php\n\nuse function Livewire\\Volt\\{state};\n\nstate(['count' => 0]);\n\n$increment = fn() => $this->count++;\n?>\n\n<div>\n    <h1>{{ $count }}</h1>\n    <button wire:click=\"increment\">+</button>\n</div>"
-                },
-                {
-                    "definition": "Reverb ওয়েবসকেট সার্ভার",
-                    "code": "php artisan reverb:start"
                 }
             ]
         }
