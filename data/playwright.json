@@ -122,6 +122,7 @@
       "items": [
         {
           "definition": "ব্রাউজার চালু করা, নতুন পেজ খোলা এবং ওয়েবসাইটে যাওয়া: এই কোডটি একটি ক্রোমিয়াম ব্রাউজার ইনস্ট্যান্স চালু করে, একটি নতুন পেজ খোলে এবং example.com-এ নেভিগেট করে।",
+
           "code": "import { chromium } from 'playwright';\n\nconst browser = await chromium.launch();\nconst context = await browser.newContext();\nconst page = await context.newPage();\nawait page.goto('https://example.com');\nawait browser.close();"
         },
         {
